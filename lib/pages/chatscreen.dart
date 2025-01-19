@@ -113,10 +113,10 @@ class _ChatScreenState extends State<ChatScreen> {
                 _messageController.text += emoji.emoji;
               },
               config: Config(
-                columns: 7, // Corrected the parameter name
-                emojiSizeMax: 32,
-                bgColor: Colors.grey[200]!,
-              ),
+                  // Corrected the parameter name
+                  //emojiSizeMax: 32,
+                  //bgColor: Colors.grey[200]!,
+                  ),
             ),
           // Input bar
           Container(
