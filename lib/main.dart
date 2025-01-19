@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/chatscreen.dart';
+import 'package:flutter_application_1/pages/loginscreen.dart';
+import 'package:flutter_application_1/pages/onboarding_page.dart';
+import 'package:flutter_application_1/pages/profile_page.dart';
+import 'package:get/get.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +15,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return GetMaterialApp(
+      initialRoute: '/onboarding', // 👈 Onboarding first screen
+      routes: {
+        '/onboarding': (context) => OnboardingScreen1(
+              title: '',
+            ),
+        '/login': (context) => LoginScreen(),
+        '/home': (context) => HomeScreen(),
+        '/chat': (context) => ChatScreen(),
+        '/profile': (context) => EnhancedProfileScreen(),
+      },
       title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
