@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/chatscreen.dart';
-import 'package:flutter_application_1/pages/loginscreen.dart';
+//import 'package:flutter_application_1/pages/homepage.dart';
+//import 'package:flutter_application_1/pages/loginscreen.dart';
 import 'package:flutter_application_1/pages/onboarding_page.dart';
 import 'package:flutter_application_1/pages/profile_page.dart';
 import 'package:get/get.dart';
+
+import 'pages/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,8 +24,8 @@ class MyApp extends StatelessWidget {
         '/onboarding': (context) => OnboardingScreen1(
               title: '',
             ),
-        '/login': (context) => LoginScreen(),
-        '/home': (context) => HomeScreen(),
+        //'/login': (context) => LoginScreen(),
+        '/home': (context) => MessageScreen(),
         '/chat': (context) => ChatScreen(),
         '/profile': (context) => EnhancedProfileScreen(),
       },

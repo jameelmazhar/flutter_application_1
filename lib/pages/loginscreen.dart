@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/homepage.dart';
+import 'package:get/get.dart';
 //import 'package:free_chat_app/pages/home_page.dart';
 //import 'package:get/get.dart';
 
@@ -123,7 +125,9 @@ class LoginScreen extends StatelessWidget {
                       child: TextButton(
                           onPressed: () {},
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Get.to(MessageScreen());
+                            },
                             child: Text(
                               'login',
                               style: TextStyle(
