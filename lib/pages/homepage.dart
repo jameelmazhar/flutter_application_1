@@ -145,10 +145,15 @@ class MessageScreen extends StatelessWidget {
                       style: TextButton.styleFrom(
                         foregroundColor: Color(0xFF1E88E5),
                       ),
-                      child: Text(
-                        "Direct Message",
-                        style: TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.bold),
+                      child: TextButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, '/chat');
+                        },
+                        child: Text(
+                          "Direct Message",
+                          style: TextStyle(
+                              fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
                       ),
                     ),
                     TextButton(
